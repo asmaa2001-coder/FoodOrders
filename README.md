@@ -116,6 +116,4 @@ com.foodapp/
 2. **Open in Android Studio**
 3. **Run on emulator or device**
 
-![**App Demmo Link**](https://github.com/asmaa2001-coder/FoodOrders/blob/master/Screen_recording_20250725_021428.webm[Screen_recording_20250725_021428.webm](https://github.com/user-attachments/assets/822f147d-4c63-4482-80aa-f7e57ca8bfd3)
-[Screen_recording_20250725_021428.webm](https://github.com/user-attachments/assets/3b79d7fe-3428-4a27-b600-c30968581d35)
-)
+![**App Demmo Link**](https://github.com/asmaa2001-coder/FoodOrders/blob/master/Screen_recording_20250725_021428.webm[Screen_recording_20250725_021428.webm)
