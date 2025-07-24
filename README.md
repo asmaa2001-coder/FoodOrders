@@ -1,0 +1,121 @@
+# 🍔 FoodApp – AI-Led Android Shopping Screen
+
+> **Track:** Android (Java)  
+> **Architecture:** MVVM with RoomDB  
+> **Development Style:** AI-Led using ProxyAI (ChatGPT)
+
+---
+
+## 🖼️ Side-by-Side Design Comparison
+
+| 🎯 Target Design | 🧪 My Implementation |
+|------------------|----------------------|
+| ![Target Design](https://github.com/asmaa2001-coder/FoodOrders/blob/master/app/src/main/java/com/foodapp/screenshots/design_screen.png) | ![My Screen](https://github.com/asmaa2001-coder/FoodOrders/blob/master/app/src/main/java/com/foodapp/screenshots/my_screen.png) |
+
+---
+
+## 🎯 Objective
+
+This demo application recreates a modern shopping screen, developed with guidance from **ProxyAI (ChatGPT)**. It uses clean MVVM architecture and local persistence via **RoomDB**.
+
+The screen includes:
+- 🧱 Product grid layout
+- 🏷️ Category chips
+- 🔢 Quantity selectors (+/–)
+- 🍫 Snackbars for interaction feedback
+
+---
+
+## 💡 ProxyAI Prompts Used
+
+Below are the ChatGPT prompts and commit hashes used to drive the development process.
+
+---
+
+### 🔹 `c3b567f0` – Product Card Layout (`product_item.xml`)
+
+**Prompt:**  
+> “Create a clean and responsive XML layout file for a product item card using MaterialCardView. It should include product image, brand logo, name, price, and a quantity selector.”
+
+**Notes:**  
+- Added extra padding and improved text alignment manually.
+- Updated brand logo scaling from AI suggestion.
+
+---
+
+### 🔹 `1286fcf4` – MainActivity + RecyclerView Binding
+
+**Prompt:**  
+> “Create a MainActivity that loads products in a grid using RecyclerView. Observe products from a ViewModel using LiveData. Implement category filtering with Chips and show Snackbars on item interactions.”
+
+**Enhancements:**  
+- Hooked Chip click listeners for dynamic filtering.
+- Displayed quantity changes via Snackbar.
+
+---
+
+### 🔹 `6b48cb8d` – ProductAdapter with Quantity Buttons
+
+**Prompt:**  
+> “Create a ProductAdapter with ViewHolder that binds product image, name, and price, and supports quantity increment/decrement with + and – buttons. Notify interactions via listener interface.”
+
+**Integration:**  
+- Implemented listener in `MainActivity`.
+- Tracked quantity using a `Map<Product, Int>` approach.
+
+---
+
+### 🔹 `9a99e233` – ViewModel + Filtering Logic
+
+**Prompt:**  
+> “Create a ViewModel that inserts mock product data and exposes filtered results via LiveData. Add a method to filter products by category name.”
+
+**Note:**  
+- Moved ViewModel from `view/` to `viewmodel/` for better separation.
+
+---
+
+### 🔹 `7bcf384d` – RoomDB Integration
+
+**Prompt:**  
+> “Create a Room database with a Product entity and DAO. Include methods to insert a dummy list and retrieve products by category or all products.”
+
+**Why Room over SQLite?**  
+- 🔐 Type safety  
+- ♻️ LiveData compatibility  
+- 🧼 Less boilerplate
+
+---
+
+## 🧱 Project Structure
+
+com.foodapp/
+├── data/ # AppDatabase, ProductDao, ProductRepository,AppExecutors
+├── model/ # Product.java (Entity)
+├── view/ # UI (MainActivity, Adapter, layouts)
+├── viewmodel/ # ProductViewModel.java
+
+
+---
+
+## 🚀 Features
+
+- 💅 Pixel-perfect UI
+- 🔄 Chip-based filtering with LiveData
+- 🧠 AI-led modular generation
+- 📦 MVVM + Repository pattern
+- 🔗 RoomDB for mock local persistence
+- 📣 Snackbars for UI feedback
+
+---
+
+## 🛠️ How to Run
+
+1. **Clone the repository**
+   git clone https://github.com/your-username/foodapp-ai-demo.git
+2. **Open in Android Studio**
+3. **Run on emulator or device**
+
+![**App Demmo Link**](https://github.com/asmaa2001-coder/FoodOrders/blob/master/Screen_recording_20250725_021428.webm[Screen_recording_20250725_021428.webm](https://github.com/user-attachments/assets/822f147d-4c63-4482-80aa-f7e57ca8bfd3)
+[Screen_recording_20250725_021428.webm](https://github.com/user-attachments/assets/3b79d7fe-3428-4a27-b600-c30968581d35)
+)
