@@ -112,7 +112,7 @@ com.foodapp/
 ## 🛠️ How to Run
 
 1. **Clone the repository**
-   git clone https://github.com/your-username/foodapp-ai-demo.git
+   [git clone https://github.com/asmaa2001-coder/FoodOrders](https://github.com/asmaa2001-coder/FoodOrders)
 2. **Open in Android Studio**
 3. **Run on emulator or device**
 
