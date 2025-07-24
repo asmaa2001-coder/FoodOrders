@@ -1,4 +1,4 @@
-package com.foodapp.view.viewmodel;
+package com.foodapp.viewmodel;
 
 
 import android.app.Application;
@@ -31,7 +31,7 @@ public class ProductViewModel extends AndroidViewModel {
 
     private void insertDummyProducts() {
         List<Product> dummyList = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 1; i <= 20; i++) {
             dummyList.add(new Product(
                     "Product " + i,
                     10.0 + i,

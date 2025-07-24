@@ -6,7 +6,7 @@
     android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@color/white"
     tools:context=".view.MainActivity">
 
     <!-- Toolbar -->
@@ -67,7 +67,7 @@
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
             android:paddingBottom="8dp"
-            app:chipSpacing="18dp"
+            app:chipSpacing="12dp"
             app:singleSelection="true">
 
             <!-- Example Chips -->
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:checkable="true"
                 android:text="أفضل العروض"
-                android:textSize="17.sp"
+                android:textSize="17sp"
                 android:textColor="@color/chip_text_selector"
                 app:checkedIcon="@drawable/baseline_check_24"
                 app:checkedIconVisible="true"
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:checkable="true"
                 android:text="وجبات قابلة للدمج"
-                android:textSize="17.sp"
+                android:textSize="17sp"
                 android:textColor="@color/chip_text_selector"
                 app:checkedIcon="@drawable/baseline_check_24"
                 app:checkedIconVisible="true"
@@ -107,8 +107,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checkable="true"
-                android:textSize="17.sp"
                 android:text="وجبات"
+                android:textSize="17sp"
                 android:textColor="@color/chip_text_selector"
                 app:checkedIcon="@drawable/baseline_check_24"
                 app:checkedIconVisible="true"
@@ -124,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:checkable="true"
                 android:text="مستورد"
-                android:textSize="17.sp"
+                android:textSize="17sp"
                 android:textColor="@color/chip_text_selector"
                 app:checkedIcon="@drawable/baseline_check_24"
                 app:checkedIconVisible="true"
@@ -143,10 +143,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/filter_scroll"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="10dp"
         android:padding="8dp"
         tools:listitem="@layout/product_item" />
-    <!-- Bottom Cart Bar -->
-
 
 </RelativeLayout>

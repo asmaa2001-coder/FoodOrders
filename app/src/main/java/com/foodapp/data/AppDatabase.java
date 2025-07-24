@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase;
 
 import com.foodapp.model.Product;
 
-@Database(entities = {Product.class}, version = 2)
+@Database(entities = {Product.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
     private static AppDatabase INSTANCE;
