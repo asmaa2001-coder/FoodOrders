@@ -7,6 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="12dp"
+    app:strokeColor="@color/white"
     app:cardElevation="6dp"
     android:background="@color/white"
     >
@@ -125,6 +126,8 @@
                     android:contentDescription="Increase"
                     app:tint="#166094" />
             </LinearLayout>
+
+
 
         </LinearLayout>
 
