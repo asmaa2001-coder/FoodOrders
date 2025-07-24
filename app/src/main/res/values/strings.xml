@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Food App</string>
+    <string name="search">Search</string>
+    <string name="food_app">Food App</string>
+    <string name="best_sales">أفضل العروض</string>
+    <string name="product_name">Chicken Steakhouse</string>
+    <string name="product_price">37.39 SAR</string>
+    <string name="quantity_text">0</string>
+</resources>

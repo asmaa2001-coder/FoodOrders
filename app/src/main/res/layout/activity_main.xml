@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".view.MainActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#F2F8FD"
+        app:titleTextColor="@android:color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="التصنيفات"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#0373A8"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/search_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Search"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="#0373A8" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Filter Chips -->
+    <HorizontalScrollView
+        android:id="@+id/filter_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@android:color/white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/filter_chip_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            app:chipSpacing="18dp"
+            app:singleSelection="true">
+
+            <!-- Example Chips -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_offers"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="أفضل العروض"
+                android:textSize="17.sp"
+                android:textColor="@color/chip_text_selector"
+                app:checkedIcon="@drawable/baseline_check_24"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="16dp"
+                app:chipStrokeWidth="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_mergeable"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="وجبات قابلة للدمج"
+                android:textSize="17.sp"
+                android:textColor="@color/chip_text_selector"
+                app:checkedIcon="@drawable/baseline_check_24"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="16dp"
+                app:chipStrokeWidth="0dp"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_meals"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:textSize="17.sp"
+                android:text="وجبات"
+                android:textColor="@color/chip_text_selector"
+                app:checkedIcon="@drawable/baseline_check_24"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="16dp"
+                app:chipStrokeWidth="0dp"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_exports"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="مستورد"
+                android:textSize="17.sp"
+                android:textColor="@color/chip_text_selector"
+                app:checkedIcon="@drawable/baseline_check_24"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/chip_background_selector"
+                app:chipCornerRadius="16dp"
+                app:chipStrokeWidth="0dp"
+                />
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter_scroll"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        tools:listitem="@layout/product_item" />
+    <!-- Bottom Cart Bar -->
+
+
+</RelativeLayout>
