@@ -8,10 +8,20 @@
 
 ## 🖼️ Side-by-Side Design Comparison
 
-| 🎯 Target Design | 🧪 My Implementation |
-|------------------|----------------------|
-| ![Target Design](https://github.com/asmaa2001-coder/FoodOrders/blob/master/app/src/main/java/com/foodapp/screenshots/design_screen.png) | ![My Screen](https://github.com/user-attachments/assets/bdfa0da1-4dfb-4207-9fde-513b58a84e66) |
----
+<table>
+  <tr>
+    <th>🎯 Target Design</th>
+    <th>🧪 My Implementation</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/asmaa2001-coder/FoodOrders/blob/master/app/src/main/java/com/foodapp/screenshots/design_screen.png" width="300" />
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/bdfa0da1-4dfb-4207-9fde-513b58a84e66" width="300" />
+    </td>
+  </tr>
+</table>
 
 ## 🎯 Objective
 
