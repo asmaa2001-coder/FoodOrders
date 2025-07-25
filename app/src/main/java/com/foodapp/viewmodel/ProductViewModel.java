@@ -44,7 +44,7 @@ public class ProductViewModel extends AndroidViewModel {
     }
 
     private void loadAllProducts() {
-        repository.getProducts(products -> filteredProducts.postValue(products));
+        repository.getProducts(filteredProducts::postValue);
     }
     public LiveData<List<Product>> getFilteredProducts() {
         return filteredProducts;
@@ -54,9 +54,7 @@ public class ProductViewModel extends AndroidViewModel {
         if (category.equals("افضل العروض")) {
             loadAllProducts();
         } else {
-            repository.getProductsByCategory(category, products -> {
-                filteredProducts.postValue(products);
-            });
+            repository.getProductsByCategory(category, filteredProducts::postValue);
         }
     }
 }
