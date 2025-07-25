@@ -10,9 +10,7 @@
 
 | 🎯 Target Design | 🧪 My Implementation |
 |------------------|----------------------|
-| ![Target Design](https://github.com/asmaa2001-coder/FoodOrders/blob/master/app/src/main/java/com/foodapp/screenshots/design_screen.png) | ![My Screen](<img width="1344" height="2992" alt="my_screen" src="https://github.com/user-attachments/assets/bdfa0da1-4dfb-4207-9fde-513b58a84e66" />
-<img width="1344" height="2992" alt="my_screen" src="https://github.com/user-attachments/assets/a93b05ce-cbcc-46b4-afd7-3798aea59530" />
-) |
+| ![Target Design](https://github.com/asmaa2001-coder/FoodOrders/blob/master/app/src/main/java/com/foodapp/screenshots/design_screen.png) |[MyScreen](<img width="1344" height="2992" alt="my_screen" src="https://github.com/user-attachments/assets/bdfa0da1-4dfb-4207-9fde-513b58a84e66"/>)
 
 ---
 
