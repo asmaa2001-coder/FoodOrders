@@ -10,7 +10,9 @@
 
 | 🎯 Target Design | 🧪 My Implementation |
 |------------------|----------------------|
-| ![Target Design](https://github.com/asmaa2001-coder/FoodOrders/blob/master/app/src/main/java/com/foodapp/screenshots/design_screen.png) | ![My Screen](https://github.com/asmaa2001-coder/FoodOrders/blob/master/app/src/main/java/com/foodapp/screenshots/my_screen.png) |
+| ![Target Design](https://github.com/asmaa2001-coder/FoodOrders/blob/master/app/src/main/java/com/foodapp/screenshots/design_screen.png) | ![My Screen](<img width="1344" height="2992" alt="my_screen" src="https://github.com/user-attachments/assets/bdfa0da1-4dfb-4207-9fde-513b58a84e66" />
+<img width="1344" height="2992" alt="my_screen" src="https://github.com/user-attachments/assets/a93b05ce-cbcc-46b4-afd7-3798aea59530" />
+) |
 
 ---
 
@@ -116,4 +118,5 @@ com.foodapp/
 2. **Open in Android Studio**
 3. **Run on emulator or device**
 
-![**App Demmo Link**](https://github.com/asmaa2001-coder/FoodOrders/blob/master/Screen_recording_20250725_021428.webm[Screen_recording_20250725_021428.webm)
+[Screen_recording_20250725_040130.webm](https://github.com/user-attachments/assets/4240539f-1f75-466b-8a77-a64f2319ea5c)
+
